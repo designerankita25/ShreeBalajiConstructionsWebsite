@@ -214,17 +214,17 @@ export const servicesData = [
     ]
   },
   {
-    id: "design-fabrication-execution",
+    id: "civil-engineering-execution",
     number: "10",
     iconName: "FaDraftingCompass",
-    title: "Design, Fabrication & Execution",
-    tagline: "Turnkey Engineering From Blueprint to Completion",
-    shortDescription: "Holistic civil contracting integrating architectural planning, structural steel fabrication, and on-site construction.",
-    fullDescription: "Our signature integrated service model unites engineering design, workshop fabrication, and active site execution under one accountable leadership team. This eliminates communication gaps between architects, fabricators, and site masons, delivering predictable outcomes on time.",
+    title: "Civil Engineering & Execution",
+    tagline: "Turnkey Civil Contracting & Structural Execution",
+    shortDescription: "Professional civil contracting integrating engineering review, heavy machinery deployment, and on-site execution.",
+    fullDescription: "Our signature contracting model unites qualified civil engineering direction, heavy machinery coordination, and disciplined on-site execution under one accountable leadership team. We execute projects strictly to engineering drawings, structural codes, and quality specifications to deliver predictable outcomes on time.",
     image: "/assets/images/projects/eera/eera-building-perspective.jpg",
     capabilities: [
-      "Architectural layout optimization and civil engineering review",
-      "On-site steel cutting, bending (up to 40mm), and truss assembly",
+      "Engineering review and structural execution planning",
+      "On-site rebar preparation, bending, and structural assembly",
       "Precision setting-out using Auto-levels and optical instruments",
       "Dedicated senior engineer site supervision across every milestone",
       "Turnkey material management and quality compliance auditing"

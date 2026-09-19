@@ -51,10 +51,10 @@ export const capabilitiesData = {
     {
       number: "02",
       id: "steel-rebar",
-      name: "STEEL & REBAR FABRICATION",
-      tag: "STEEL & REBAR FABRICATION",
+      name: "STEEL & REBAR REINFORCEMENT",
+      tag: "STEEL & REBAR REINFORCEMENT",
       role: "Rebar Cutting, Forming & Cage Assembly",
-      description: "Structural reinforcement integrity demands precise rebar dimensions according to structural design drawings. Dedicated motorized fabrication units ensure uniform bar bends and clean cuts.",
+      description: "Structural reinforcement integrity demands precise rebar dimensions according to structural engineering drawings. Dedicated on-site motorized bending and cutting units ensure uniform bar bends and clean cuts.",
       featuredImage: "/assets/images/machinery/steel-bending-machine.jpg",
       featuredAlt: "Bar Bending Machine on site forming reinforcement bars",
       equipment: [

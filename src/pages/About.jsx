@@ -16,7 +16,7 @@ export default function About() {
             Who We <span>Are</span>
           </h1>
           <p className="page-hero-subtitle">
-            Shree Balaji Constructions is a civil contractor and engineering company established in 2018 in Farrukhnagar, Gurugram, specializing in the design, fabrication, and execution of durable building projects.
+            Shree Balaji Constructions is a civil contractor and engineering company established in 2018 in Farrukhnagar, Gurugram, specializing in civil engineering and robust on-site execution of durable building projects.
           </p>
         </div>
       </section>

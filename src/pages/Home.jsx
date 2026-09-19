@@ -343,7 +343,7 @@ export default function Home() {
             badge="Systematic Methodology"
             title="Our Seven-Phase"
             highlight="Execution Process"
-            subtitle="A transparent, disciplined construction sequence from initial consultation through design, fabrication, active execution, and final handover."
+            subtitle="A transparent, disciplined construction sequence from initial consultation through engineering review, active site execution, and final delivery."
             center
           />
 

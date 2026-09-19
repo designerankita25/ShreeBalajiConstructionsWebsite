@@ -29,7 +29,7 @@ export default function Footer() {
 
             <p className="footer-slogan">{companyData.tagline}</p>
             <p style={{ fontSize: '0.9rem', lineHeight: '1.7', color: 'var(--text-muted)', marginBottom: '1.25rem' }}>
-              Civil Contractor & Engineers specializing in design, fabrication, and execution of industrial, commercial, and residential building projects across Haryana and NCR.
+              Civil Contractor & Engineers specializing in civil engineering and on-site execution of industrial, commercial, and residential building projects across Haryana and NCR.
             </p>
 
             <div className="footer-gst-badge">

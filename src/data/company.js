@@ -12,7 +12,7 @@ export const companyData = {
   shortName: "SBC",
   businessType: "Civil Contractor & Engineers",
   tagline: "WE BUILD YOUR DREAM.",
-  supportingLine: "DESIGN. FABRICATION. EXECUTION.",
+  supportingLine: "ENGINEERING. EXECUTION. DELIVERY.",
   heroParagraph: "Delivering construction and civil engineering solutions across residential, commercial and industrial projects.",
   establishedYear: 2018,
   gstNumber: "06AYJPK1975D2ZE",
@@ -71,8 +71,8 @@ export const companyData = {
     {
       id: "execution",
       title: "Turnkey Scope",
-      subtitle: "Design, Fabrication & Execution",
-      description: "End-to-end management from earthwork and foundations to steel roofing and finishing."
+      subtitle: "Civil Engineering & Execution",
+      description: "End-to-end management from earthwork and foundations to structural execution and finishing."
     },
     {
       id: "compliance",
@@ -85,7 +85,7 @@ export const companyData = {
   // Company Narrative & Profile
   about: {
     leadHeadline: "BUILT ON EXPERIENCE. DELIVERED WITH PRECISION.",
-    lead: "Shree Balaji Constructions was established in 2018 and is based in Farrukhnagar, Gurugram, Haryana. The company specializes in design, fabrication and execution of building projects and works across industrial, commercial and residential sectors.",
+    lead: "Shree Balaji Constructions was established in 2018 and is based in Farrukhnagar, Gurugram, Haryana. The company specializes in civil engineering and execution of building projects across industrial, commercial and residential sectors.",
     story: "From our base in Farrukhnagar, Gurugram, Shree Balaji Constructions has grown into a reliable civil engineering and general contracting firm. We combine hands-on site management, rigorous engineering principles, and coordinated machinery deployment to execute complex warehouse facilities, commercial centers, factory structures, institutional buildings, and residential developments.",
     vision: "DREAM BIG AND TURN THOSE DREAMS INTO REALITY.",
     mission: "To fulfill every construction commitment through ethical business practices, uncompromising quality standards, and dedicated value-added engineering — creating enduring infrastructure and lasting client partnerships.",
@@ -135,7 +135,7 @@ export const companyData = {
     {
       number: "02",
       title: "Uncompromising Quality Standards",
-      description: "Laboratory-grade concrete batching, certified structural steel fabrication, and systematic quality checkpoints."
+      description: "Laboratory-grade concrete batching, certified structural steel placement, and systematic quality checkpoints."
     },
     {
       number: "03",
@@ -150,7 +150,7 @@ export const companyData = {
     {
       number: "05",
       title: "Architectural Flexibility & Customization",
-      description: "Adaptive engineering solutions tailored to unique architectural visions, spatial demands, and site topographies."
+      description: "Adaptive engineering solutions tailored to unique architectural drawings, spatial demands, and site topographies."
     },
     {
       number: "06",
@@ -160,12 +160,12 @@ export const companyData = {
     {
       number: "07",
       title: "End-to-End Project Management",
-      description: "Single-source accountability covering design, procurement, fabrication, civil execution, and final handover."
+      description: "Single-source accountability covering civil engineering, procurement coordination, site execution, and final handover."
     },
     {
       number: "08",
       title: "Skilled Workforce & Advanced Technology",
-      description: "Experienced site foremen, skilled trades, laser leveling, automated batching, and modern fabrication machinery."
+      description: "Experienced site foremen, skilled trades, laser leveling, automated batching, and modern construction machinery."
     },
     {
       number: "09",
@@ -188,13 +188,13 @@ export const companyData = {
     },
     {
       step: "03",
-      title: "Design & Engineering",
-      description: "Architectural layout validation, structural calculations, foundation engineering, and shop drawings."
+      title: "Engineering Review",
+      description: "Structural drawing verification, foundation engineering checks, and site setting-out planning."
     },
     {
       step: "04",
-      title: "Fabrication",
-      description: "Off-site and on-site steel cutting, bending, rebar cages, and structural member fabrication."
+      title: "Site Mobilization",
+      description: "Site setup, heavy machinery deployment, rebar staging, and workforce mobilization."
     },
     {
       step: "05",

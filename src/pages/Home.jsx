@@ -41,14 +41,15 @@ const serviceIconMap = {
 };
 
 export default function Home() {
-  // Curated Showcase Projects: Ongoing projects come first, followed by completed projects
+  // Curated Showcase Projects: All 7 verified projects
   const showcaseProjectIds = [
     'swan-international',
-    'eera-constructive-solution',
-    'br-logistic-park',
-    'rao-sher-singh-memorial-school',
+    'sanjay-engineering',
+    'hi-tech-warehouse',
     'nord-industries',
-    'hi-tech-warehouse'
+    'br-logistics',
+    'eera-constructive-solution',
+    'rao-sher-singh-memorial-school'
   ];
 
   const homepageProjects = showcaseProjectIds
@@ -255,18 +256,18 @@ export default function Home() {
       </section>
 
       {/* ===================================================================
-          5. PROJECT EXPERIENCE (WHERE WE'VE BUILT)
+          5. SELECTED PROJECTS (IMAGE-FIRST VISUAL SHOWCASE)
           =================================================================== */}
-      <section className="section-pad section-dark" aria-label="Project Portfolio">
+      <section className="section-pad section-dark" aria-label="Selected Projects Portfolio">
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '3rem' }}>
             <div>
-              <span className="badge-tag">Our Project Experience</span>
+              <span className="badge-tag">IMAGE-FIRST PORTFOLIO</span>
               <h2 style={{ color: '#FFF' }}>
-                WHERE WE'VE <span style={{ color: 'var(--gold-light)' }}>BUILT.</span>
+                SELECTED <span style={{ color: 'var(--gold-light)' }}>PROJECTS</span>
               </h2>
               <p style={{ color: 'var(--text-muted)', marginTop: '0.4rem', fontSize: '1rem', maxWidth: '650px' }}>
-                A growing portfolio across industrial, commercial, institutional, hospitality and infrastructure requirements.
+                Real construction projects, wide-span logistics warehouses, and industrial infrastructure executed with engineering precision across Haryana, NCR, and Rajasthan.
               </p>
             </div>
             <Button to="/projects" variant="secondary" icon={<FaArrowRight />}>
@@ -274,8 +275,8 @@ export default function Home() {
             </Button>
           </div>
 
-          {/* Architectural Typographic Showcase (NO FRONT COVER IMAGES) */}
-          <div className="projects-pair-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
+          {/* Large Visual Projects Grid */}
+          <div className="projects-pair-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2rem' }}>
             {homepageProjects.map(proj => (
               <ProjectCard key={proj.id} project={proj} />
             ))}

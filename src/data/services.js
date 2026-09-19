@@ -14,7 +14,7 @@ export const servicesData = [
     tagline: "Commercial, Institutional & Residential Structures",
     shortDescription: "Complete turnkey structural construction from foundation footings to multi-story frames and masonry finishing.",
     fullDescription: "Shree Balaji Constructions executes robust building construction projects for institutional, commercial, and multi-family residential clients. Leveraging precise concrete batching, certified rebar reinforcement, and experienced site supervision, we construct durable, safe, and code-compliant structural frames.",
-    image: "https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/projects/rao-sher-singh/rao-school-multistorey-construction.jpg",
     capabilities: [
       "Subterranean foundation excavation, piling, and footing works",
       "Reinforced Cement Concrete (RCC) column and beam casting",
@@ -37,7 +37,7 @@ export const servicesData = [
     tagline: "Durable Industrial Corridors & Internal Road Networks",
     shortDescription: "Heavy-duty concrete paving, internal logistic corridors, asphalt road construction, and sub-base compaction.",
     fullDescription: "Industrial parks, logistics hubs, and residential developments require roads capable of handling constant heavy-vehicle traffic and regional monsoon weather. We deploy heavy soil compactors, graders, and specialized concrete paving tools to engineer enduring road networks.",
-    image: "/assets/images/machinery/soil-compactor.jpg",
+    image: null,
     capabilities: [
       "Sub-grade soil stabilization and heavy roller compaction",
       "Granular Sub-Base (GSB) and Wet Mix Macadam (WMM) laying",
@@ -60,7 +60,7 @@ export const servicesData = [
     tagline: "High-Bay Logistics Facilities & Distribution Hubs",
     shortDescription: "Turnkey warehouse execution featuring super-flat laser screeded concrete floors, high-clearance bays, and loading docks.",
     fullDescription: "With extensive experience in logistics corridors such as Farrukhnagar and Gurugram, we build modern logistics warehouses. Our team handles wide-span foundation footings, heavy load-bearing flooring, dock leveler pits, and durable structural envelopes.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/projects/br-logistics/br-logistics-building.jpg",
     capabilities: [
       "High-load industrial floor casting with anti-crack joint design",
       "Wide-span structural columns and pre-engineered steel integration",
@@ -83,7 +83,7 @@ export const servicesData = [
     tagline: "Engineered for Machinery Loads & Production Continuity",
     shortDescription: "Civil engineering for manufacturing facilities, heavy equipment machine foundations, and industrial utility trenches.",
     fullDescription: "Factory environments impose intense vibrational, thermal, and chemical demands on civil structures. Shree Balaji Constructions engineers vibration-damped machinery foundations, trench systems for electrical and pneumatic conduits, and high-strength industrial flooring.",
-    image: "/assets/images/machinery/slm-flori-mixer.jpg",
+    image: "/assets/images/projects/nord-industries/nord-completed-blue-glass-facade.jpg",
     capabilities: [
       "Heavy vibrating machine foundations and isolated dynamic footings",
       "Sub-floor utility trenches for power, gas, water, and compressed air",
@@ -106,7 +106,7 @@ export const servicesData = [
     tagline: "Stormwater Management & Underground Utility Networks",
     shortDescription: "RCC box drains, stormwater collection networks, sewer lines, and rainwater recharge chambers.",
     fullDescription: "Effective drainage protects industrial and commercial structures from water logging, soil erosion, and foundation degradation. We design and construct gravity-flow stormwater networks, cast-in-situ RCC storm drains, precast pipe laying, and rainwater harvesting structures.",
-    image: "/assets/images/machinery/jcb-3dx.jpg",
+    image: null,
     capabilities: [
       "Cast-in-situ RCC rectangular box drains and precast drains",
       "Deep underground stormwater and sewage pipeline laying",
@@ -129,7 +129,7 @@ export const servicesData = [
     tagline: "Comprehensive Subterranean & Rooftop Moisture Protection",
     shortDescription: "Advanced crystalline, elastomeric, and membrane waterproofing for basements, terraces, water tanks, and wet areas.",
     fullDescription: "Water ingress is the leading cause of structural rebar corrosion and premature deterioration. Our waterproofing specialists apply multi-layer liquid applied membranes, crystalline deep-penetrating admixtures, and bitumen sheets to seal foundations, podiums, and roofs permanently.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+    image: null,
     capabilities: [
       "Basement raft and retaining wall waterproofing",
       "Rooftop terrace screed slope grading and elastomeric coatings",
@@ -152,7 +152,7 @@ export const servicesData = [
     tagline: "Pre-Engineered Roofing Sheets & Weather Envelopes",
     shortDescription: "Installation of standing seam profiles, color-coated trapezoidal metal sheets, insulation, and translucent daylight panels.",
     fullDescription: "We provide end-to-end metal roofing and wall cladding solutions for wide-span industrial sheds and commercial facilities. We install high-tensile color-coated Galvalume sheets, rockwool thermal insulation, ventilation louvers, and ridge caps engineered for maximum wind-uplift resistance.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/projects/eera/eera-steel-frame-construction.jpg",
     capabilities: [
       "Color-coated trapezoidal and standing seam profile roofing",
       "Polycarbonate daylight embossed sheets for energy efficiency",
@@ -175,7 +175,7 @@ export const servicesData = [
     tagline: "Industrial, Commercial & Vitrified Architectural Flooring",
     shortDescription: "Heavy-duty industrial vitrified tiles, granite, Kota stone, anti-skid paving, and decorative commercial tiling.",
     fullDescription: "From durable Kota stone and granite flooring in high-wear institutional corridors to mirror-finish vitrified tiles in commercial lobbies and executive offices, our master tilers deliver precise alignments, consistent grout lines, and level finishes.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    image: null,
     capabilities: [
       "Heavy-duty industrial vitrified tiling for commercial floors",
       "Natural stone flooring: Granite, Kota stone, and marble",
@@ -198,7 +198,7 @@ export const servicesData = [
     tagline: "Preventive Care, Structural Repairs & Lifecycle Upkeep",
     shortDescription: "Civil maintenance, crack repairs, spalling concrete restoration, drainage de-silting, and routine building upkeep.",
     fullDescription: "Operational facilities require proactive maintenance to preserve safety, aesthetics, and structural integrity. Shree Balaji Constructions provides scheduled and emergency maintenance services for warehouses, factories, and commercial properties.",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+    image: null,
     capabilities: [
       "Crack injection, polymer modified mortar repairs, and rebar rust treatment",
       "Industrial flooring joint resealing and localized floor leveling",
@@ -221,7 +221,7 @@ export const servicesData = [
     tagline: "Turnkey Engineering From Blueprint to Completion",
     shortDescription: "Holistic civil contracting integrating architectural planning, structural steel fabrication, and on-site construction.",
     fullDescription: "Our signature integrated service model unites engineering design, workshop fabrication, and active site execution under one accountable leadership team. This eliminates communication gaps between architects, fabricators, and site masons, delivering predictable outcomes on time.",
-    image: "/assets/images/machinery/slm-flori-mixer.jpg",
+    image: "/assets/images/projects/eera/eera-building-perspective.jpg",
     capabilities: [
       "Architectural layout optimization and civil engineering review",
       "On-site steel cutting, bending (up to 40mm), and truss assembly",

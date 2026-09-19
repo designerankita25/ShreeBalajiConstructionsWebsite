@@ -193,10 +193,11 @@ export const capabilitiesData = {
     subtitle: "From industrial complexes to institutional campuses and hospitality projects, our execution capability powers real-world construction milestones.",
     featuredProjects: [
       { id: "swan-international", name: "Swan International Pvt. Ltd.", category: "Hotel & Resort", location: "Garhi Bajidpur, Sohna (ONGOING)" },
-      { id: "eera-constructive-solution", name: "Eera Constructive Solution", category: "Industrial", location: "Tauru, Mewat (ONGOING)" },
-      { id: "br-logistic-park", name: "BR Logistic Park", category: "Warehouse & Logistics", location: "Farrukhnagar, Gurugram" },
+      { id: "sanjay-engineering", name: "Sanjay Engineering", category: "Industrial", location: "Keswana, Rajasthan" },
+      { id: "hi-tech-warehouse", name: "Hi-Tech Warehouse", category: "Warehouse", location: "Tauru, Haryana" },
       { id: "nord-industries", name: "Nord Industries", category: "Industrial", location: "MET City Jhajjar" },
-      { id: "hi-tech-warehouse", name: "Hi-Tech Warehouse Pvt. Ltd.", category: "Warehouse", location: "Tauru, Haryana" },
+      { id: "br-logistics", name: "BR Logistics", category: "Warehouse & Logistics", location: "Farrukhnagar, Gurugram" },
+      { id: "eera-constructive-solution", name: "EERA CONSTRUCTIVE SOLUTION", category: "Industrial", location: "Tauru, Mewat (ONGOING)" },
       { id: "rao-sher-singh-memorial-school", name: "Rao Sher Singh Memorial School", category: "Institutional", location: "Rewari, Haryana" }
     ]
   }

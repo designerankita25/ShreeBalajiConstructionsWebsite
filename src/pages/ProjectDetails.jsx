@@ -15,7 +15,7 @@ import Button from '../components/Button';
 
 export default function ProjectDetails() {
   const { id } = useParams();
-  const currentIndex = projectsData.findIndex(p => p.id === id);
+  const currentIndex = projectsData.findIndex(p => p.id === id || (id === 'br-logistics' && p.id === 'br-logistic-park') || (id === 'br-logistic-park' && p.id === 'br-logistics'));
   const project = projectsData[currentIndex];
 
   // Fallback if project is not found
@@ -49,17 +49,37 @@ export default function ProjectDetails() {
   return (
     <div className="project-details-page">
       {/* 1. PROJECT HERO */}
-      <section className="project-detail-hero" aria-label="Project Hero">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="project-detail-hero-img"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = "/assets/images/machinery/soil-compactor.jpg";
-          }}
-        />
-        <div className="project-detail-hero-overlay">
+      <section className="project-detail-hero" aria-label="Project Hero" style={{ minHeight: '440px', position: 'relative', display: 'flex', alignItems: 'flex-end', backgroundColor: '#0B0C0E', overflow: 'hidden' }}>
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="project-detail-hero-img"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
+          />
+        ) : (
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(197, 160, 89, 0.08) 0%, transparent 60%), linear-gradient(135deg, #0B0C0E 0%, #14161A 100%)',
+              borderBottom: '1px solid var(--border-dark)'
+            }}
+          >
+            {/* Blueprint Grid Overlay */}
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                opacity: 0.15,
+                backgroundImage: 'linear-gradient(rgba(197, 160, 89, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(197, 160, 89, 0.2) 1px, transparent 1px)',
+                backgroundSize: '40px 40px'
+              }}
+            />
+          </div>
+        )}
+
+        <div className="project-detail-hero-overlay" style={{ position: 'relative', zIndex: 2, width: '100%', padding: '4rem 0 3rem', background: project.image ? 'linear-gradient(to top, rgba(11, 12, 14, 0.95) 0%, rgba(11, 12, 14, 0.6) 60%, rgba(11, 12, 14, 0.3) 100%)' : 'none' }}>
           <div className="container">
             <Link
               to="/projects"
@@ -90,12 +110,6 @@ export default function ProjectDetails() {
               <span style={{ backgroundColor: 'rgba(255,255,255,0.12)', color: '#FFF', padding: '0.3rem 0.75rem', borderRadius: 'var(--radius-xs)', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase' }}>
                 {project.category}
               </span>
-              {project.isMaintenance && (
-                <span style={{ backgroundColor: 'rgba(197, 160, 89, 0.25)', color: 'var(--gold-light)', padding: '0.3rem 0.75rem', borderRadius: 'var(--radius-xs)', fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', border: '1px solid var(--gold-border)' }}>
-                  <FaWrench style={{ marginRight: '0.35rem' }} />
-                  MAINTENANCE WORK
-                </span>
-              )}
             </div>
 
             <h1 style={{ color: '#FFF', textShadow: '0 2px 12px rgba(0,0,0,0.8)', maxWidth: '950px', fontSize: 'clamp(2rem, 4vw, 3.25rem)' }}>
@@ -226,25 +240,51 @@ export default function ProjectDetails() {
 
       {/* 4. PROJECT GALLERY */}
       {project.gallery && project.gallery.length > 0 && (
-        <section className="section-pad-sm section-dark-elevated" aria-label="Project Visual Gallery">
+        <section className="section-pad section-dark-elevated" aria-label="Project Visual Gallery">
           <div className="container">
-            <span className="badge-tag">Site Documentation</span>
-            <h2 style={{ marginBottom: '2.5rem', color: '#FFF' }}>Project Gallery & Documentation</h2>
+            <span className="badge-tag">AUTHENTIC SITE DOCUMENTATION</span>
+            <h2 style={{ marginBottom: '0.5rem', color: '#FFF' }}>Project Gallery & Site Documentation</h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: '650px' }}>
+              Photographic execution record from field operations.
+            </p>
 
-            <div className="gallery-grid">
-              {project.gallery.map((imgUrl, index) => (
-                <div key={index} className="gallery-thumb">
-                  <img
-                    src={imgUrl}
-                    alt={`${project.title} photographic documentation ${index + 1}`}
-                    loading="lazy"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "/assets/images/machinery/soil-compactor.jpg";
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '2rem' }}>
+              {project.gallery.map((item, index) => {
+                const imgUrl = typeof item === 'string' ? item : item.url;
+                const title = typeof item === 'object' && item.title ? item.title : `${project.title} Site View ${index + 1}`;
+                const caption = typeof item === 'object' && item.caption ? item.caption : null;
+
+                return (
+                  <div
+                    key={index}
+                    style={{
+                      backgroundColor: 'var(--bg-surface)',
+                      border: '1px solid var(--border-dark)',
+                      borderRadius: 'var(--radius-xs)',
+                      overflow: 'hidden'
                     }}
-                  />
-                </div>
-              ))}
+                  >
+                    <div style={{ height: '280px', overflow: 'hidden', position: 'relative' }}>
+                      <img
+                        src={imgUrl}
+                        alt={title}
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        loading="lazy"
+                      />
+                    </div>
+                    <div style={{ padding: '1.25rem 1.5rem' }}>
+                      <h4 style={{ color: '#FFF', fontSize: '1.05rem', marginBottom: caption ? '0.35rem' : 0 }}>
+                        {title}
+                      </h4>
+                      {caption && (
+                        <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: '1.5', margin: 0 }}>
+                          {caption}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

@@ -130,52 +130,172 @@ export default function About() {
       </section>
 
       {/* 6. THE PEOPLE BEHIND THE BUILD */}
-      <section className="section-pad section-dark-elevated" aria-label="People Behind The Build">
+      <section className="section-pad section-dark-elevated" aria-label="The People Behind The Build">
         <div className="container">
-          <SectionHeading
-            badge="Execution Leadership"
-            title="The People"
-            highlight="Behind the Build"
-            subtitle="PEOPLE + PLANNING + RESOURCES + EXECUTION. Meet the engineering and site leadership overseeing operations, quality control, and client collaboration."
-            center
-          />
+          <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+            <span className="badge-tag">FOUNDERS • ENGINEERING • EXECUTION</span>
+            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#FFF', marginTop: '0.75rem', letterSpacing: '-0.02em' }}>
+              THE PEOPLE <span style={{ color: 'var(--gold-light)' }}>BEHIND THE BUILD</span>
+            </h2>
+            <div className="gold-divider center" style={{ marginTop: '1rem', marginBottom: '1.25rem' }}></div>
+            <p style={{ color: 'var(--text-muted)', maxWidth: '680px', margin: '0 auto', fontSize: '1rem' }}>
+              Direct engineering leadership on-site. Combining technical structural precision with disciplined field operations across Haryana, NCR, and Rajasthan.
+            </p>
+          </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem', maxWidth: '900px', margin: '0 auto' }}>
-            {/* Krishan Yadav */}
-            <div style={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border-dark)', padding: '2.5rem', borderTop: '2px solid var(--gold-primary)' }}>
-              <div style={{ color: 'var(--gold-light)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
-                Engineering & Project Direction
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2.5rem', maxWidth: '1080px', margin: '0 auto', alignItems: 'stretch' }}>
+            {/* KRISHAN YADAV - PROMINENT FOUNDER PROFILE */}
+            <div
+              style={{
+                backgroundColor: 'var(--bg-surface)',
+                border: '2px solid var(--gold-primary)',
+                boxShadow: '0 12px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(197, 160, 89, 0.15)',
+                padding: 'clamp(2rem, 5vw, 3rem)',
+                borderRadius: 'var(--radius-xs)',
+                position: 'relative',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}
+            >
+              {/* Featured Badge */}
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '-14px',
+                  left: '2rem',
+                  backgroundColor: 'var(--gold-primary)',
+                  color: '#0B0C0E',
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '0.72rem',
+                  fontWeight: '900',
+                  letterSpacing: '0.12em',
+                  textTransform: 'uppercase',
+                  padding: '0.3rem 0.9rem',
+                  borderRadius: '2px'
+                }}
+              >
+                ENGINEERING LEADERSHIP
               </div>
-              <h3 style={{ color: '#FFF', fontSize: '1.45rem', marginBottom: '0.25rem' }}>
-                {companyData.contact.primaryContactPerson}
-              </h3>
-              <div style={{ color: 'var(--gold-light)', fontSize: '0.9rem', fontWeight: '600', marginBottom: '1rem' }}>
-                {companyData.contact.primaryContactRole}
+
+              <div>
+                <div style={{ color: 'var(--gold-light)', fontSize: '0.85rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem', marginTop: '0.5rem' }}>
+                  ENGINEERING & PROJECT DIRECTION
+                </div>
+                
+                <h3 style={{ color: '#FFF', fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: '800', marginBottom: '0.35rem', letterSpacing: '-0.01em' }}>
+                  KRISHAN YADAV
+                </h3>
+
+                <div
+                  style={{
+                    display: 'inline-block',
+                    backgroundColor: 'rgba(197, 160, 89, 0.15)',
+                    border: '1px solid var(--gold-border)',
+                    color: 'var(--gold-light)',
+                    fontSize: '0.85rem',
+                    fontWeight: '800',
+                    letterSpacing: '0.06em',
+                    textTransform: 'uppercase',
+                    padding: '0.35rem 0.85rem',
+                    borderRadius: '2px',
+                    marginBottom: '1.5rem'
+                  }}
+                >
+                  FOUNDER • B.TECH CIVIL ENGINEER
+                </div>
+
+                <p style={{ color: '#E2E8F0', fontSize: '1rem', lineHeight: '1.8', marginBottom: '2rem' }}>
+                  "Leads the engineering and technical direction of construction projects, with a focus on project planning, site engineering, structural execution, quality control, technical coordination, and project delivery."
+                </p>
               </div>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', lineHeight: '1.7', marginBottom: '1.5rem' }}>
-                Leads technical feasibility, structural rebar calculations, layout accuracy, concrete quality testing, and project site engineering.
-              </p>
-              <div style={{ color: '#FFF', fontSize: '0.85rem' }}>
-                Direct Phone: <a href={`tel:${companyData.contact.primaryPhone.replace(/[^0-9+]/g, '')}`} style={{ color: 'var(--gold-light)', fontWeight: '700' }}>{companyData.contact.primaryPhone}</a>
+
+              <div style={{ borderTop: '1px solid var(--border-dark)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+                <div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700' }}>
+                    Direct Contact
+                  </div>
+                  <a
+                    href={`tel:${companyData.contact.primaryPhone.replace(/[^0-9+]/g, '')}`}
+                    style={{ color: 'var(--gold-light)', fontWeight: '800', fontSize: '1.05rem', textDecoration: 'none' }}
+                  >
+                    {companyData.contact.primaryPhone}
+                  </a>
+                </div>
+
+                <a
+                  href={`tel:${companyData.contact.primaryPhone.replace(/[^0-9+]/g, '')}`}
+                  className="btn btn-sm btn-primary"
+                >
+                  Direct Call
+                </a>
               </div>
             </div>
 
-            {/* Ashok Yadav */}
-            <div style={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border-dark)', padding: '2.5rem', borderTop: '2px solid var(--gold-primary)' }}>
-              <div style={{ color: 'var(--gold-light)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
-                Operations & Site Coordination
+            {/* ASHOK YADAV - CO-FOUNDER PROFILE */}
+            <div
+              style={{
+                backgroundColor: 'var(--bg-main)',
+                border: '1px solid var(--border-dark)',
+                borderTop: '2px solid var(--gold-primary)',
+                padding: 'clamp(2rem, 5vw, 3rem)',
+                borderRadius: 'var(--radius-xs)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}
+            >
+              <div>
+                <div style={{ color: 'var(--gold-light)', fontSize: '0.85rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem', marginTop: '0.5rem' }}>
+                  OPERATIONS & SITE COORDINATION
+                </div>
+
+                <h3 style={{ color: '#FFF', fontSize: 'clamp(1.5rem, 2.5vw, 1.85rem)', fontWeight: '800', marginBottom: '0.35rem', letterSpacing: '-0.01em' }}>
+                  ASHOK YADAV
+                </h3>
+
+                <div
+                  style={{
+                    display: 'inline-block',
+                    backgroundColor: 'rgba(255, 255, 255, 0.06)',
+                    border: '1px solid var(--border-dark)',
+                    color: 'var(--text-secondary)',
+                    fontSize: '0.82rem',
+                    fontWeight: '800',
+                    letterSpacing: '0.06em',
+                    textTransform: 'uppercase',
+                    padding: '0.35rem 0.85rem',
+                    borderRadius: '2px',
+                    marginBottom: '1.5rem'
+                  }}
+                >
+                  FOUNDER • SITE OPERATIONS
+                </div>
+
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.96rem', lineHeight: '1.8', marginBottom: '2rem' }}>
+                  "Leads site operations and execution, coordinating equipment mobilization, contractors, material movement, workforce coordination, and day-to-day site activities."
+                </p>
               </div>
-              <h3 style={{ color: '#FFF', fontSize: '1.45rem', marginBottom: '0.25rem' }}>
-                {companyData.contact.secondaryContactPerson}
-              </h3>
-              <div style={{ color: 'var(--gold-light)', fontSize: '0.9rem', fontWeight: '600', marginBottom: '1rem' }}>
-                Co-Founder & Site Operations
-              </div>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', lineHeight: '1.7', marginBottom: '1.5rem' }}>
-                Manages on-site equipment mobilization, trade contractor scheduling, material deliveries, and day-to-day site execution across projects.
-              </p>
-              <div style={{ color: '#FFF', fontSize: '0.85rem' }}>
-                Direct Phone: <a href={`tel:${companyData.contact.secondaryPhone.replace(/[^0-9+]/g, '')}`} style={{ color: 'var(--gold-light)', fontWeight: '700' }}>{companyData.contact.secondaryPhone}</a>
+
+              <div style={{ borderTop: '1px solid var(--border-dark)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+                <div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700' }}>
+                    Direct Contact
+                  </div>
+                  <a
+                    href={`tel:${companyData.contact.secondaryPhone.replace(/[^0-9+]/g, '')}`}
+                    style={{ color: 'var(--gold-light)', fontWeight: '800', fontSize: '1.05rem', textDecoration: 'none' }}
+                  >
+                    {companyData.contact.secondaryPhone}
+                  </a>
+                </div>
+
+                <a
+                  href={`tel:${companyData.contact.secondaryPhone.replace(/[^0-9+]/g, '')}`}
+                  className="btn btn-sm btn-secondary"
+                >
+                  Direct Call
+                </a>
               </div>
             </div>
           </div>
